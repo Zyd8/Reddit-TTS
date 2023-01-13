@@ -1,11 +1,12 @@
 """
-In order for the program to execute correctly, we need to input our own created Reddit account to the appropriate variables.
+We need to input our own created Reddit account to the appropriate variables.
 
-More on this on the documentation (https://praw.readthedocs.io/en/stable/getting_started/quick_start.html).
+More of this on the documentation (https://praw.readthedocs.io/en/stable/getting_started/quick_start.html).
 
-The purpose of this credentials is for the sole purpose of simply getting access to Reddit's API. And for you to be identified by them.
+The purpose of this credentials is for the sole purpose of simply getting access to Reddit's API.
 
-Since we're only reading from the API and not writing to Reddit via API, it is easier to set up. If perchance we want to write, read the PRAW docs.
+Since we're only reading from the API and not writing to Reddit via API, it is easier to set up. 
+If perchance we want to write, read the PRAW docs.
 
 Warning: we must not share this unique credentials to anyone we don't trust, as one's account could get compromised (reason why it's on a seperate file). 
 """

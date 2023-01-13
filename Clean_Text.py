@@ -1,8 +1,11 @@
+"""
+Takes the text.txt and cleans it, then writes it to another file (text_clean.txt)
+"""
 from cleantext import clean
 
 text_folder = "text"
-text_file_u = "\\text.txt" # unclean directory
-text_file_c = "\\text_clean.txt" # clean directory
+text_file_u = "\\text.txt" 
+text_file_c = "\\text_clean.txt" 
 
 def clean_post():
     print("done.")

@@ -1,5 +1,6 @@
 """
-Feeds the voice model with the cleaned text and generates mp3 files per title, selftext, and comments to the audio folder
+Feeds the voice model with the cleaned text and generates mp3 files 
+based on per title, selftext, and comments to the audio folder
 """
 
 from gtts import gTTS

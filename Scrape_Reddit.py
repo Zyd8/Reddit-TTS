@@ -1,5 +1,6 @@
 """
-Finds a submission's title, selftext/description, comments, replies then writes it to the text.txt file
+Finds the submission's title, selftext/description, comments, replies 
+then writes it to the text.txt file in the text folder
 """
 
 import praw
@@ -33,7 +34,8 @@ def call_comments(file, submission):
         file.write(strpd_main_com+"\n")
         main_com_ctr += 1
         if main_com_ctr == main_com_need:
-            # If the main comment counter meets what the main comment need, the sub-comment scraper will run one last time
+            # If the main comment counter meets what the main comment need, 
+            # the sub-comment scraper will run one last time
             for sub_com in main_com.replies:
                 strpd_sub_com = sub_com.body.strip()
                 strpd_sub_com = strpd_sub_com.replace("\n", "")  
