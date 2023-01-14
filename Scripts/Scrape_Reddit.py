@@ -65,18 +65,18 @@ def find_post():
     print("verified.")
     print("finding...", end="")
     submission = reddit.submission(url=link_need)
-    submission.comment_sort = "top" # OPTIONAL -- How do you want the Reddit thread comments sorted?
-    submission.comments.replace_more(limit=2) # OPTIONAL -- How deep do you want your comments go?
+    submission.comment_sort = "top" # How the Reddit thread comments is sorted
+    submission.comments.replace_more(limit=2) # How deep the comments goes
     with open(text_folder+text_file, "w", encoding="utf-8") as f:
-        call_title(f, submission) # REQUIREMENT
-        call_selftext(f, submission) # OPTIONAL -- Omit if needed
-        call_comments(f, submission) # REQUIREMENT
+        call_title(f, submission) 
+        call_selftext(f, submission) 
+        call_comments(f, submission) 
 
 text_folder = "text"
 text_file = "\\text.txt" # where all the extracted data goes 
-link_need = "Enter reddit link you want to extract from" # REQUIREMENT 
-main_com_need = "Enter int" # REQUIREMENT -- How many main/top level comments do you want?
-sub_com_need = "Enter int" # REQUIREMENT -- How many sub level comments per main/top level comments do you want?
+link_need = "ENTER THE REDDIT SUBMISSION LINK" # REQUIREMENT 
+main_com_need = "ENTER AN INT" # REQUIREMENT -- How many main/top level comments do you want?
+sub_com_need = "ENTER AN INT" # REQUIREMENT -- How many sub level comments per main/top level comments do you want?
 
 
 
